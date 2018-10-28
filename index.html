@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COSMIC PINPOINT</title>
+    <!-- Font Import -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+    <!-- CSS stylesheet Import -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- modal -->
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Invalid input.</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+    <!-- header -->
+    <!-- stary night sky background -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="assets/images/nightsky.jpg"></div>
+
+
+        <!-- Webpage Title Banner -->
+        <div style="position: relative; left: 0; top: 0;">
+            <img src="assets/images/nightsky.jpg" class="nightsky" />
+            <img src="assets/images/CosmicPinpointBanner.jpg" class="banner responsive-img" />
+        </div>
+
+
+        <!-- video background header  -->
+        <!-- * CONFLICTS - conflicts with nightsky.jpg * -->
+        <!-- <div class="parallax">
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/videos/space.mp4" type="video/mp4">
+        </video>
+        </div> -->
+    </div>
+
+
+    <!-- NASAs picture of the day div -->
+
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">Picture of the Day by NASA</h2>
+            <!-- <b>API URL:</b>
+            <pre id="reqObject"></pre> -->
+
+            <!-- image of the day -->
+            <img id="apod_img_id" width="600px" class="inline-img" />
+
+            <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+            <p id="copyright"></p>
+
+            <h3 id="apod_title"></h3>
+            <p id="apod_explaination"></p>
+            <br />
+
+        </div>
+    </div>
+
+    <!-- Containers to hold dynamic content -->
+    <!-- stary night sky background -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="assets/images/nightsky.jpg"></div>
+    </div>
+
+
+
+    <!-- div for ISS PASSOVER DATA -->
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">ISS Passover in Your Area</h2>
+            <p class="grey-text text-darken-3 lighten-3">
+
+
+                <input id="search-current" type="submit" value="Search Current Location">
+
+
+                <!-- search current location -->
+                <input type="text" id="search-input" placeholder="city, country" class="section white"><br>
+
+                <!-- This button will trigger our AJAX call -->
+
+                <!-- button2 search elsewhere -->
+                <input id="search-elsewhere" type="submit" value="Search Elsewhere">
+
+
+
+                <div id="tableHere"></div>
+
+
+                <!-- table for Satellite's locations -->
+
+            </p>
+        </div>
+    </div>
+
+
+    <!-- stary night sky background -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="assets/images/nightsky.jpg"></div>
+    </div>
+
+    <!-- Mars Rover Pics -->
+    <div class="section white">
+        <div class="row container">
+
+            <h1>Pick a Mars Rover !</h1>
+
+            <div class="rovers">
+                <div class="row">
+                    <div class="col s4">
+                        <h3>Curiosity</h3>
+                        <img src ="assets/images/rover-curiosity.jpg" class="responsive-img">
+                    </div>
+                    <div class="col s4">
+                        <h3>Spirit</h3>
+                        <img src="assets/images/rover-spirit.jpg" class="responsive-img">
+                    </div>
+                    <div class="col s4">
+                        <h3>Opportunity</h3>
+                        <img src="assets/images/rover-opportunity.jpg" class="responsive-img">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-trigger btn' href='#' data-target='dropdown1'> Drop Me! </a>
+
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a data-rover="curiosity">Curiosity</a></li>
+                <li><a data-rover="spirit">Spirit</a></li>
+                <li><a data-rover="opportunity">Opportunity</a></li>
+            </ul>
+            <br>
+            <span id="pictureHere"></span>
+
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="assets/images/nightsky.jpg"></div>
+    </div>
+
+
+    <!-- Near Earth Object -->
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">Near Earth Objects</h2>
+
+            <table style="width:100%" id="neoTable">
+
+            </table>
+
+
+
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="assets/images/nightsky.jpg"></div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="parallax-container">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+
+                    <h5 class="white-text">Thanks for stopping by!</h5>
+                    <p class="grey-text text-lighten-4">Group Project 1
+
+                        Cosmic Pinpoint
+                        
+                        An outerspace centerted web application utilizing several open source APIs.
+                        
+                        NASA Picture of the Day we used NASAs open source APOD API.
+                        International Space Station Passover data we utilized 2 different APIs including an IP address geolocator Ipstack, and utilized open Notify to search the ISS passtimes.
+                        Near Earth Objects utilized NASAs NEO open source API
+                        Mars Rover Picture dropdown utilized NASA Mars Rover
+                        Design and Style
+                        
+                        The webpage design is made using Parallax by Materialize. We also added their modal and drop down menu. The header banner made using Adobe Spark.</p>
+
+                    <br>
+                    <p>© Copyright 2018</p>
+                </div>
+
+
+                <div class="footer">
+                    <h5 class="white-text">Our Team on LinkedIn & Github: </h5>
+                    <ul>
+                        <br>
+                        <li>Meili Ellis-Tingle: <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/meili-ellis-tingle-673980148/">LinkedIn
+                                | </a><a class="grey-text text-lighten-3" href="https://github.com/meilik">Github</a></li>
+                        <br>
+                        <li>Jesus Garcia: <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jesus-garcia-b8739261">LinkedIn
+                                | </a><a class="grey-text text-lighten-3" href="https://github.com/nj-chuy">Github</a></li>
+                        <br>
+                        <li>Sienna Spargo: <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/sienna-spargo-534703b8/">LinkedIn
+                                | </a><a class="grey-text text-lighten-3" href="https://github.com/siennaspargo">Github</a></li>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Materialize Layout Javascript -->
+    <script type="text/javascript" src="assets/javascript/materialize.min.js"></script>
+    <!-- Javascript -->
+    <script src="assets/javascript/code.js"></script>
+    <!-- momment script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <!-- app.js script -->
+    <script src="assets/javascript/app.js"></script>
+    <!-- neo_code.js -->
+    <script src="assets/javascript/NEO_code.js"></script>
+
+</body>
+
+</html>
