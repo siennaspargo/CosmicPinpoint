@@ -9,3 +9,14 @@
 The webpage design is made using Parallax by Materialize. 
 We also added their modal and drop down menu.
 We used Adobe Spark to create the Cosmic Pinpoint Banner.
+
+
+Deployed with Github Pages: https://siennaspargo.github.io/CosmicPinpoint/
+
+
+<p align="left">
+  <a href="https://siennaspargo.github.io/CosmicPinpoint/"> <img src="https://i.ibb.co/9gFyNTx/Screen-Shot-2019-06-28-at-8-09-52-PM.jpg" alt="Screen-Shot-2019-06-28-at-8-09-52-PM" width="250" title="homepage"></a>
+   <a href="https://siennaspargo.github.io/CosmicPinpoint/"> <img src="https://i.ibb.co/7jchqGt/Screen-Shot-2019-06-28-at-8-10-47-PM.jpg" alt="Screen-Shot-2019-06-28-at-8-10-47-PM" width="250" title="NASA img of day"></a>
+    <a href="https://siennaspargo.github.io/CosmicPinpoint/"> <img src="https://i.ibb.co/svfF7dy/Screen-Shot-2019-06-28-at-8-14-37-PM.jpg" alt="Screen-Shot-2019-06-28-at-8-14-37-PM" width="250" title="International Space Station Pass Times"></a>
+    <a href="https://siennaspargo.github.io/CosmicPinpoint/"> <img src="https://i.ibb.co/3Fgrv9q/Screen-Shot-2019-06-28-at-8-14-27-PM.jpg" alt="Screen-Shot-2019-06-28-at-8-14-27-PM" width="250" title="Mars Rover API Images"></a>
+</p>
